@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.form-part {
+  max-width: 50%;
+}
+
+.form-part form {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  align-items: center;
+}
+
+.form-group > label {
+    text-align: start;
+    width: 42%;
+}
+
+.form-group > input {
+  flex-grow: 1;
+}
+
+input,
+select {
+  padding: 7px;
+  outline: none;
+}
+
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+}
+
+.form-group:last-child > input {
+  background-color: yellowgreen;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+.form-group:last-child > input:hover {
+  background-color: orange;
+}
+
+table,
+th,
+td {
+    padding: 25px 15px;
+    border: 1px solid yellow;
+    text-align: start;
+    border-collapse: collapse;
+}
